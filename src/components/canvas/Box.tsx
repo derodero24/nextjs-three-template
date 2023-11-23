@@ -24,7 +24,7 @@ const BoxComponent = ({ route }) => {
         onPointerOut={() => setHover(false)}
         scale={hovered ? 1.1 : 1}
       >
-        <boxBufferGeometry args={[1, 1, 1]} />
+        <boxGeometry args={[1, 1, 1]} />
         <meshPhysicalMaterial color={route === '/' ? 'orange' : 'hotpink'} />
       </mesh>
       <directionalLight position={[5, 5, 5]} />
